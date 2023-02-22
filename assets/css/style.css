@@ -1,0 +1,28 @@
+/* #region common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+/* #endregion common */
+
+
+/* #region colors */
+:root {
+    --s-sidebar: #000000;
+    --s-main-top: #080b12;
+    --s-main:#141922;
+    --s-font-primary: #141922;
+    --s-font-secondary: #ffffff;
+    --s-effect-highlighted: #abfd2f;
+}
+/* #endregion colors */
+
+
+/* #region utilities */
+
+/* #region utilities */
