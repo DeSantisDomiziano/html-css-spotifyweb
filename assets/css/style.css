@@ -114,6 +114,10 @@ a {
     color: var(--s-sidebar);
 }
 
+.container_s.none.overflow {
+    max-height: 400px;
+}
+
 #app_download {
     position: absolute;
     bottom: 0;
