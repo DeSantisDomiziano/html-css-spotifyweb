@@ -97,24 +97,23 @@ ul {
 
 
 [class^="w_"] {
-    padding: 0.25rem;
-    float: left;
+    padding: 0.5rem;
 }
 
 .w_50 {
-    width: 50%
+    min-width: 50%
 }
 
 .w_30 {
-    width: 30%;
+    min-width: 30%;
 }
 
 .w_25 {
-    width: 25%;
+    min-width: 25%;
 }
 
 .w_16 {
-    width: calc(100% / 12 * 2);
+    min-width: calc(100% / 12 * 2);
 }
 
 
@@ -243,6 +242,7 @@ ul {
     background-color: var(--s-main);
     padding-top: 1rem;
     padding-left: 1rem;
+    color: var(--s-font-secondary);
 }
 
 
@@ -262,6 +262,40 @@ ul {
     color: var(--s-font-secondary);
 }
 
+.main_bottom h2{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.main_bottom .container {
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+}
+
+.main_bottom .container [class^="w_"] {
+    text-align: center;
+}
+
+.main_bottom .container .card {
+    box-shadow: 0 0 9px 0 var(--s-sidebar);
+    border-radius: 0 0 1rem 1rem;
+    height: 100%;
+}
+
+.main_bottom .container [class^="w_"]:hover {
+    transform: scale(0.95);
+}
+
+.main_bottom [class^="w_"] p,
+.main_bottom [class^="w_"] span {
+    white-space: pre-wrap;
+    padding: 0.25rem;
+}
+
+.main_bottom span {
+    color: var(--s-font-primary);
+}
 
 /* ################## /.MAIN BOTTOM ################## */
 
@@ -360,7 +394,7 @@ ul {
 @media screen and (min-width: 880px) {
 
     .w_md_25 {
-        width: 25%;
+        min-width: 25%;
     }
     
 }
@@ -369,6 +403,12 @@ ul {
 
     .w_lg_16 {
         width: calc(100% / 12 * 2);
+    }
+
+    .container_lg {
+        max-width: 80%;
+        width: 1140px;
+        margin: auto;
     }
     
 }
