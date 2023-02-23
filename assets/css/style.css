@@ -50,6 +50,8 @@ ul {
 .container_xs {
     width: 90%;
 }
+/* ############ /.CONTAINER ############### */
+
 
 .clearfix {
     content: "";
@@ -71,11 +73,8 @@ ul {
     display: flex;
 }
 
-.flex_center {
-    display: flex;
-    justify-self: center;
-    align-items: center;
-}
+/* ############ /.DISPLAY ############### */
+
 
 .row {
     display: flex;
@@ -93,6 +92,35 @@ ul {
 .col_9 {
     width: calc(100% / 12 * 9);
 }
+
+/* ############ /.ROW & COL ############### */
+
+
+[class^="w_"] {
+    padding: 0.25rem;
+    float: left;
+}
+
+.w_50 {
+    width: 50%
+}
+
+.w_30 {
+    width: 30%;
+}
+
+.w_25 {
+    width: 25%;
+}
+
+.w_16 {
+    width: calc(100% / 12 * 2);
+}
+
+
+
+/* ############ /.WIDTH ############### */
+
 
 /* #region utilities */
 
@@ -213,7 +241,30 @@ ul {
     height: calc(100vh - 160px);
     width: calc(100vw - 32px);
     background-color: var(--s-main);
+    padding-top: 1rem;
+    padding-left: 1rem;
 }
+
+
+.main_bottom nav ul {
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+}
+
+.main_bottom nav li a {
+    padding: 0 0.75rem;
+}
+
+.main_bottom nav li a:hover {
+    border-bottom: 2px solid var(--s-effect-highlighted);
+    box-shadow:  0 0 20px 0px var(--s-font-primary);
+    color: var(--s-font-secondary);
+}
+
+
+/* ################## /.MAIN BOTTOM ################## */
+
 
 /* #endregion main */
 
@@ -307,10 +358,18 @@ ul {
 }
 
 @media screen and (min-width: 880px) {
+
+    .w_md_25 {
+        width: 25%;
+    }
     
 }
 
 @media screen and (min-width: 1200px) {
+
+    .w_lg_16 {
+        width: calc(100% / 12 * 2);
+    }
     
 }
 
