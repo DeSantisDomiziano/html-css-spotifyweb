@@ -15,6 +15,7 @@ img {
 
 a {
     text-decoration: none;
+    color: var(--s-font-primary);
 }
 
 ul {
@@ -48,6 +49,12 @@ ul {
 
 .container_xs {
     width: 90%;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .relative {
@@ -181,6 +188,26 @@ ul {
     width: calc(100vw - 32px);
     background-color: var(--s-main-top);
 }
+
+.main_top.d_flex {
+    justify-content: end;
+    align-items: center;
+}
+
+.main_top.d_flex a {
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--s-font-secondary);
+    color: var(--s-font-secondary);
+}
+
+.main_top.d_flex a:hover {
+    transform: scale(1.1);
+}
+
+/* ################## /.MAIN TOP ################## */
+
 
 .main_bottom {
     height: calc(100vh - 160px);
